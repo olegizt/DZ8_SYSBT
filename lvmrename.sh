@@ -1,5 +1,5 @@
 #!/bin/bash
-
+yum install -y wget
 vgrename centos OlegOtusRoot
 sed -i 's:/dev/mapper/centos:/dev/mapper/OlegOtusRoot:' /etc/fstab
 sed -i 's:lvm.lv=centos:lvm.lv=OlegOtusRoot:g' /etc/default/grub
